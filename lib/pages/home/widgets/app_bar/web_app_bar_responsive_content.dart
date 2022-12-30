@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
- 
+
 class WebAppBarResponsiveContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
         },
       ),
     );
- 
+
     final ButtonStyle elevatedButtonStyle = OutlinedButton.styleFrom(
       primary: Colors.black,
       backgroundColor: Colors.white,
@@ -42,7 +42,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
         },
       ),
     );
- 
+
     return AppBar(
       backgroundColor: Colors.black,
       toolbarHeight: 72,
