@@ -12,21 +12,30 @@ class WebAppBar extends StatelessWidget {
           Text("Responsividade"),
           const SizedBox(width: 32),
           WebAppBarResponsiveContent(),
-          IconButton(onPressed: (){}, icon: Icon(Icons.shopping_cart)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart)),
           const SizedBox(width: 24),
           SizedBox(
-            height: 38,
-            child: OutlinedButton(onPressed: () {}, child: Text("Fazer Login", style: TextStyle(color: Colors.white),),
-            style: OutlinedButton.styleFrom(side: BorderSide(color: Colors.white, width: 2)),
-            )
-          ),
+              height: 38,
+              child: OutlinedButton(
+                onPressed: () {},
+                child: Text(
+                  "Fazer Login",
+                  style: TextStyle(color: Colors.white),
+                ),
+                style: OutlinedButton.styleFrom(
+                    side: BorderSide(color: Colors.white, width: 2)),
+              )),
           const SizedBox(width: 8),
           SizedBox(
-            height:40,
-            child: ElevatedButton(onPressed: () {}, child: Text("Cadastre-se", style: TextStyle(color: Colors.black),),
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
-            )
-          )
+              height: 40,
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  "Cadastre-se",
+                  style: TextStyle(color: Colors.black),
+                ),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
+              ))
         ],
       ),
     );
