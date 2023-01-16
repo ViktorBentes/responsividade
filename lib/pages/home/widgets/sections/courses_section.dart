@@ -4,14 +4,15 @@ import 'package:untitled/breakpoints.dart';
 import 'package:untitled/pages/home/widgets/courses_item.dart';
 
 class CoursesSection extends StatelessWidget {
+  final List<CoursesItem> courses = [CoursesItem(), CoursesItem()];
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
         return GridView.builder(
-          itemCount: 20,
+          itemCount: courses.length,
           itemBuilder: (context, index) {
-            return CoursesItem();
+            return courses[index];
           },
           gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 300,
