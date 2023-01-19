@@ -46,9 +46,10 @@ class AdvantageSection extends StatelessWidget {
         runSpacing: 16,
         spacing: 8,
         children: [
-          buildAdvantage("+45.000 Alunos", "Didatica Garantida"),
-          buildAdvantage("+45.000 Alunos", "Didatica Garantida"),
-          buildAdvantage("+45.000 Alunos", "Didatica Garantida"),
+          buildAdvantage("+500 Produções", "Feitos e entregues"),
+          buildAdvantage("+100 Criações Próprias", "Pedidos Personalizados"),
+          buildAdvantage(
+              "+1000 Sorrisos Genuínos", "Com amor em todas as fases"),
         ],
       ),
     );

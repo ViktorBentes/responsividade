@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Responsividade Demonstracao',
+        title: 'Artes da Titita - Seus Sonhos',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),

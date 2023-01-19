@@ -1,10 +1,52 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:untitled/breakpoints.dart';
 import 'package:untitled/pages/home/widgets/courses_item.dart';
 
 class CoursesSection extends StatelessWidget {
-  final List<CoursesItem> courses = [CoursesItem(), CoursesItem()];
+  final List<CoursesItem> courses = [
+    CoursesItem(
+      image: Image.asset('images/boneca1.jpeg', fit: BoxFit.cover),
+      title: 'Boneca de Vestido',
+      subtitle: 'Artes da Titia',
+      value: 66.90,
+    ),
+    CoursesItem(
+      image: Image.asset('images/Anjinho 1.jpeg', fit: BoxFit.cover),
+      title: 'Anjinho',
+      subtitle: 'Artes da Titia',
+      value: 79.90,
+    ),
+    CoursesItem(
+      image: Image.asset('images/Gatinha e lua.jpeg', fit: BoxFit.cover),
+      title: 'Gatinha com Lua',
+      subtitle: 'Artes da Titia',
+      value: 89.90,
+    ),
+    CoursesItem(
+      image: Image.asset('images/Leao 1.jpeg', fit: BoxFit.cover),
+      title: 'Leão',
+      subtitle: 'Artes da Titia',
+      value: 59.90,
+    ),
+    CoursesItem(
+      image: Image.asset('images/Sao Bento 1.jpeg', fit: BoxFit.cover),
+      title: 'São Bento',
+      subtitle: 'Artes da Titia',
+      value: 69.90,
+    ),
+    CoursesItem(
+      image: Image.asset('images/Pato 1.jpeg', fit: BoxFit.cover),
+      title: 'Sr Pato',
+      subtitle: 'Artes da Titia',
+      value: 49.90,
+    ),
+    CoursesItem(
+      image: Image.asset('images/Unicornio 1.jpeg', fit: BoxFit.cover),
+      title: 'Unicornio',
+      subtitle: 'Artes da Titia',
+      value: 66.90,
+    ),
+  ];
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(

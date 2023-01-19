@@ -9,7 +9,7 @@ class WebAppBar extends StatelessWidget {
       toolbarHeight: 72,
       title: Row(
         children: [
-          Text("Responsividade"),
+          Text("Artes da Titita"),
           const SizedBox(width: 32),
           WebAppBarResponsiveContent(),
           IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart)),

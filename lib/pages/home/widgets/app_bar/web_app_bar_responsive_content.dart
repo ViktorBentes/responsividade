@@ -42,7 +42,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 SizedBox(width: 32),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text("Aprender"),
+                  child: Text("Quem Somos"),
                   style: ElevatedButton.styleFrom(
                       primary: Colors.black, onPrimary: Color(0xffffffff)),
                 ),
@@ -51,7 +51,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 SizedBox(width: 8),
                 ElevatedButton(
                     onPressed: () {},
-                    child: Text("Flutter"),
+                    child: Text("Dúvidas"),
                     style: ElevatedButton.styleFrom(
                         primary: Colors.black, onPrimary: Color(0xffffffff))),
               ],
