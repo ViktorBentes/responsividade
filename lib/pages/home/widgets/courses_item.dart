@@ -31,7 +31,7 @@ class CoursesItem extends StatelessWidget {
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 15,
-                  color: Colors.white),
+                  color: Colors.black),
             );
           },
         ),
@@ -42,7 +42,7 @@ class CoursesItem extends StatelessWidget {
         Text(
           "R\$${value.toStringAsFixed(2)}",
           style: TextStyle(
-              fontWeight: FontWeight.bold, fontSize: 14, color: Colors.white),
+              fontWeight: FontWeight.bold, fontSize: 14, color: Colors.black),
         ),
       ],
     );

@@ -17,9 +17,18 @@ class TopSection extends StatelessWidget {
               children: [
                 AspectRatio(
                   aspectRatio: 3.4,
-                  child: Image.asset(
-                    "images/tititacapa.png",
-                    fit: BoxFit.cover,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          color: Color(0xfffde8e4),
+                        ),
+                      ),
+                      Image.asset(
+                        "images/tititacapa.png",
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
                 ),
                 Positioned(
@@ -38,6 +47,7 @@ class TopSection extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.italic,
                               color: Colors.white,
                             ),
                           ),
@@ -46,6 +56,7 @@ class TopSection extends StatelessWidget {
                             "Grandes sonhos transformados em realidade.",
                             style: TextStyle(
                               fontSize: 18,
+                              fontStyle: FontStyle.italic,
                               color: Colors.white,
                             ),
                           ),
@@ -68,9 +79,18 @@ class TopSection extends StatelessWidget {
                 SizedBox(
                   height: 250,
                   width: double.infinity,
-                  child: Image.asset(
-                    "images/tititacapa.png",
-                    fit: BoxFit.cover,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          color: Color(0xfffde8e4),
+                        ),
+                      ),
+                      Image.asset(
+                        "images/tititacapa.png",
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
                 ),
                 Positioned(
@@ -89,6 +109,7 @@ class TopSection extends StatelessWidget {
                               style: TextStyle(
                                 fontSize: 35,
                                 fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
                                 color: Colors.white,
                               ),
                             ),
@@ -97,6 +118,7 @@ class TopSection extends StatelessWidget {
                               "Grandes sonhos transformados em realidade.",
                               style: TextStyle(
                                 fontSize: 15,
+                                fontStyle: FontStyle.italic,
                                 color: Colors.white,
                               ),
                             ),
@@ -114,9 +136,18 @@ class TopSection extends StatelessWidget {
           children: [
             AspectRatio(
               aspectRatio: 3.4,
-              child: Image.network(
-                "images/tititacapa.png",
-                fit: BoxFit.cover,
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      color: Color(0xfffde8e4),
+                    ),
+                  ),
+                  Image.asset(
+                    "images/tititacapa.png",
+                    fit: BoxFit.cover,
+                  ),
+                ],
               ),
             ),
             Padding(
@@ -129,7 +160,8 @@ class TopSection extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 35,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      fontStyle: FontStyle.italic,
+                      color: Colors.black,
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -137,7 +169,8 @@ class TopSection extends StatelessWidget {
                     "Grandes sonhos transformados em realidade.",
                     style: TextStyle(
                       fontSize: 15,
-                      color: Colors.white,
+                      fontStyle: FontStyle.italic,
+                      color: Colors.black,
                     ),
                   ),
                   const SizedBox(height: 16),

@@ -5,11 +5,14 @@ class WebAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xfffbd1c9),
       toolbarHeight: 72,
       title: Row(
         children: [
-          Text("Artes da Titita"),
+          Text(
+            "Artes da Titita",
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          ),
           const SizedBox(width: 32),
           WebAppBarResponsiveContent(),
           IconButton(onPressed: () {}, icon: Icon(Icons.shopping_cart)),
@@ -20,7 +23,7 @@ class WebAppBar extends StatelessWidget {
                 onPressed: () {},
                 child: Text(
                   "Fazer Login",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.black),
                 ),
                 style: OutlinedButton.styleFrom(
                     side: BorderSide(color: Colors.white, width: 2)),

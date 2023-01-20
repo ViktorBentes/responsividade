@@ -8,8 +8,8 @@ class AdvantageSection extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Icon(
-            Icons.star,
-            color: Colors.white,
+            Icons.star_outline_outlined,
+            color: Colors.black,
             size: 50,
           ),
           const SizedBox(width: 8),
@@ -18,7 +18,7 @@ class AdvantageSection extends StatelessWidget {
               Text(
                 title,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),
@@ -26,7 +26,7 @@ class AdvantageSection extends StatelessWidget {
               Text(
                 subtitle,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
               ),
             ],
