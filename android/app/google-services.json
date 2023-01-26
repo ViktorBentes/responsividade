@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "815632878913",
+    "project_id": "sitetititas",
+    "storage_bucket": "sitetititas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815632878913:android:360a3f2975ed8163dc25c0",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815632878913-mf1lu4l19h3i4p6q7kb0s6sqr5767907.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAM1eYg8uwfQhmH2wIWJBhOGVOKvyFN-o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815632878913-mf1lu4l19h3i4p6q7kb0s6sqr5767907.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "815632878913-s9l24rfmopdktmffs3uofkjllcqmrtfp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.untitled"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

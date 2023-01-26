@@ -38,6 +38,7 @@ dependencies:
   auto_size_text: ^3.0.0
   device_preview: ^0.7.1
   peanut: ^4.3.0
+  firebase_core: ^2.4.1
 
 dev_dependencies:
   flutter_test:
