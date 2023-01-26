@@ -21,23 +21,23 @@ class WebAppBar extends StatelessWidget {
               height: 38,
               child: OutlinedButton(
                 onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                    side: BorderSide(color: Colors.white, width: 2)),
                 child: Text(
                   "Fazer Login",
                   style: TextStyle(color: Colors.black),
                 ),
-                style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: Colors.white, width: 2)),
               )),
           const SizedBox(width: 8),
           SizedBox(
               height: 40,
               child: ElevatedButton(
                 onPressed: () {},
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
                 child: Text(
                   "Cadastre-se",
                   style: TextStyle(color: Colors.black),
                 ),
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
               ))
         ],
       ),

@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:untitled/breakpoints.dart';
 import 'package:untitled/pages/home/widgets/custom_search_field.dart';

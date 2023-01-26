@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class WebAppBarResponsiveContent extends StatelessWidget {
@@ -8,9 +6,6 @@ class WebAppBarResponsiveContent extends StatelessWidget {
     return Expanded(
       child: LayoutBuilder(
         builder: (context, constraints) {
-          print(
-              "biggest ${constraints.biggest} smallest ${constraints.smallest}");
-
           return Row(
             children: [
               Expanded(
@@ -42,18 +37,20 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 SizedBox(width: 32),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text("Quem Somos"),
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.black, onPrimary: Color(0xffffffff)),
+                      foregroundColor: Color(0xffffffff),
+                      backgroundColor: Colors.black),
+                  child: Text("Quem Somos"),
                 ),
               ],
               if (constraints.maxWidth >= 500) ...[
                 SizedBox(width: 8),
                 ElevatedButton(
                     onPressed: () {},
-                    child: Text("Dúvidas"),
                     style: ElevatedButton.styleFrom(
-                        primary: Colors.black, onPrimary: Color(0xffffffff))),
+                        foregroundColor: Color(0xffffffff),
+                        backgroundColor: Colors.black),
+                    child: Text("Dúvidas")),
               ],
             ],
           );
