@@ -55,6 +55,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '815632878913',
     projectId: 'sitetititas',
     authDomain: 'sitetititas.firebaseapp.com',
+    databaseURL: 'https://sitetititas-default-rtdb.firebaseio.com',
     storageBucket: 'sitetititas.appspot.com',
     measurementId: 'G-QVS8D0P7C7',
   );
@@ -64,6 +65,7 @@ class DefaultFirebaseOptions {
     appId: '1:815632878913:android:360a3f2975ed8163dc25c0',
     messagingSenderId: '815632878913',
     projectId: 'sitetititas',
+    databaseURL: 'https://sitetititas-default-rtdb.firebaseio.com',
     storageBucket: 'sitetititas.appspot.com',
   );
 }

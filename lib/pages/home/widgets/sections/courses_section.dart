@@ -1,9 +1,13 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:untitled/breakpoints.dart';
 import 'package:untitled/pages/home/widgets/courses_item.dart';
 import 'package:untitled/pages/home/widgets/sections/product.dart';
+import 'package:firebase_database/firebase_database.dart';
 
 class CoursesSection extends StatelessWidget {
+  FirebaseDatabase database = FirebaseDatabase.instance;
   final List<Product> products = [
     Product(
       imageSrc: 'images/boneca1.jpeg',
@@ -52,29 +56,37 @@ class CoursesSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        return GridView.builder(
-          itemCount: products.length,
-          itemBuilder: (context, index) {
-            return CoursesItem(
-                image: Image.asset(
-                  products[index].imageSrc,
-                  fit: BoxFit.cover,
+        return FutureBuilder(
+            future: database.ref("Products").get(),
+            builder: (context, snapshot) {
+              List<Product> productsfromfirebase =
+                  Product.fromlist(snapshot.data?.value);
+              print(snapshot.data?.value?.toString());
+              return GridView.builder(
+                itemCount: products.length,
+                itemBuilder: (context, index) {
+                  return CoursesItem(
+                      image: Image.asset(
+                        products[index].imageSrc,
+                        fit: BoxFit.cover,
+                      ),
+                      title: products[index].name,
+                      subtitle: products[index].signature,
+                      value: products[index].price);
+                },
+                gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+                  maxCrossAxisExtent: 300,
+                  crossAxisSpacing: 16,
+                  mainAxisSpacing: 16,
                 ),
-                title: products[index].name,
-                subtitle: products[index].signature,
-                value: products[index].price);
-          },
-          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 300,
-            crossAxisSpacing: 16,
-            mainAxisSpacing: 16,
-          ),
-          padding: EdgeInsets.symmetric(
-              vertical: 16,
-              horizontal: constraints.maxWidth >= tabletBreakpoint ? 0 : 16),
-          physics: const NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
-        );
+                padding: EdgeInsets.symmetric(
+                    vertical: 16,
+                    horizontal:
+                        constraints.maxWidth >= tabletBreakpoint ? 0 : 16),
+                physics: const NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+              );
+            });
       },
     );
   }
